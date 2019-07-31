@@ -39,6 +39,7 @@ if __name__ == "__main__":
 	hTags = ["h1","h2","h3","h4","h5"]
 	pTags = ["p", "p1", "p2"]
 	headings = content.find_all(hTags)
+	
 	#print(headings)
 	print (len(headings))
 	for heading in headings:
