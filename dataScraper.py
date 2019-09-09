@@ -36,15 +36,13 @@ if __name__ == "__main__":
 	chrome_options = Options()
 	chrome_options.add_argument("--headless")
 	chrome_options.binary_location = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
-
 	driver = webdriver.Chrome(executable_path=os.path.abspath("chromedriver"), chrome_options=chrome_options)
 	bigDict = {}
-	pageDict = {}
-	contentDictionary = {}
 	# Open section data
 	with open("testScrape.csv", "r") as read_file:
 		csv_reader = csv.DictReader(read_file)
 		for row in csv_reader:
+			pageDict = {}
 			print(row['team_name'], row['wiki_link'])
 			base_url = row['wiki_link']
 			driver.get(base_url)
@@ -71,20 +69,19 @@ if __name__ == "__main__":
 					
 			
 			for i in range(0,len(links),2):
+				contentDictionary = {}
 				link = links[i]
 				page_title = links[i+1]
+				print(link)
+				print(page_title)
 				driver.get(link)
 				page_soup = bs(driver.page_source, "lxml")
 				site_name = row['team_name']
+
 				style_tags = page_soup.find_all("style")
 				for style in style_tags:
 					style.extract()
-				
-				content = page_soup.find_all("body")[0]
-				
-				
-				
-				
+							
 				style_tags = page_soup.find_all("style")
 				for style in style_tags:
 					style.extract()
@@ -100,11 +97,11 @@ if __name__ == "__main__":
 				for heading in headings:
 					heading_text = heading.get_text()
 					next_tag = heading.next_sibling
-					print(next_tag)
+					#print(next_tag)
 					next_text = ""
 					while next_tag != None and next_tag.name not in hTags:
-						if(next_tag.string!=None) and next_tag.name in pTags:
-							next_text += next_tag.string
+						if(str(next_tag)!=None) and next_tag.name in pTags:
+							next_text += str(next_tag).strip()
 						next_tag = next_tag.next_sibling
 					#print (countFreq("{", a))
 					# if next_tag != None:
@@ -113,10 +110,11 @@ if __name__ == "__main__":
 						# print (heading_text + "\n")
 						# print (next_tag.get_text())
 					if next_text != "":
+						next_text = bs(next_text,"lxml").text
 						contentDictionary[heading_text] = next_text
 				pageDict[page_title] = dict(contentDictionary)	
-			bigDict[site_name] = dict(pageDict)
-			print(content)
+		bigDict[site_name] = dict(pageDict)
+			#print(content)
 	
 	print(bigDict)
 	write_file(bigDict, "initial_data.csv")
