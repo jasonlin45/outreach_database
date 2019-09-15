@@ -18,6 +18,11 @@ import os
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
 
+
+# Output files:
+# failure to scrape
+# could not find two distinct pages
+
 if __name__ == "__main__":
 	
 	def write_file(dict, fileName):
@@ -32,14 +37,25 @@ if __name__ == "__main__":
 						print(key3, ':', val3, "\n")
 						writer.writerow(toArr)
 
+	def write_fails(dict, fileName):
+		with open("Data/"+fileName, 'w', newline='', encoding = 'utf-8-sig') as csvfile:
+			writer = csv.writer(csvfile, delimiter=',')
+			#csvWriterDumb = [names[0][i]] + [names[1][i]] + [names[2][i]] + [names[3][i]]
+			#writer.writerow(csvWriterDumb)
+			for key, val in dict.items():
+				toArr = [key] + [val] 
+				print(key, ':', val, "\n")
+				writer.writerow(toArr)
+	
 	# Create headless chrome
 	chrome_options = Options()
 	chrome_options.add_argument("--headless")
 	chrome_options.binary_location = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 	driver = webdriver.Chrome(executable_path=os.path.abspath("chromedriver"), chrome_options=chrome_options)
 	bigDict = {}
+	fails = {}
 	# Open section data
-	with open("testScrape.csv", "r") as read_file:
+	with open("toScrape.csv", "r") as read_file:
 		csv_reader = csv.DictReader(read_file)
 		for row in csv_reader:
 			pageDict = {}
@@ -62,7 +78,9 @@ if __name__ == "__main__":
 				for element in elementsList:
 					link = element.get("href")
 					text = element.text.strip()
-					if link not in links and "http" in link:
+					if link == None:
+						fails[row['team_name']] = row['wiki_link']
+					elif link != None and link not in links and "http" in link:
 						#print(link)
 						links.append(link)
 						links.append(text)
@@ -78,10 +96,6 @@ if __name__ == "__main__":
 				page_soup = bs(driver.page_source, "lxml")
 				site_name = row['team_name']
 
-				style_tags = page_soup.find_all("style")
-				for style in style_tags:
-					style.extract()
-							
 				style_tags = page_soup.find_all("style")
 				for style in style_tags:
 					style.extract()
@@ -113,12 +127,13 @@ if __name__ == "__main__":
 						next_text = bs(next_text,"lxml").text
 						contentDictionary[heading_text] = next_text
 				pageDict[page_title] = dict(contentDictionary)	
-		bigDict[site_name] = dict(pageDict)
+			bigDict[site_name] = dict(pageDict)
 			#print(content)
 	
 	print(bigDict)
+
 	write_file(bigDict, "initial_data.csv")
-	
+	write_fails(fails, "fail_data.csv")
 
 
 
