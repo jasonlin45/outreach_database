@@ -13,7 +13,7 @@ from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup as bs
 import pandas as pd
 import re
-import os
+import os	
 
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
@@ -30,6 +30,10 @@ if __name__ == "__main__":
 			writer = csv.writer(csvfile, delimiter=',')
 			#csvWriterDumb = [names[0][i]] + [names[1][i]] + [names[2][i]] + [names[3][i]]
 			#writer.writerow(csvWriterDumb)
+			
+			#header
+			toArr = ["team_name"] + ["page"] + ["header"] + ["body"]
+			writer.writerow(toArr)
 			for key, value in dict.items():
 				for key2, val2 in value.items():
 					for key3, val3, in val2.items():
@@ -49,7 +53,7 @@ if __name__ == "__main__":
 	
 	# Create headless chrome
 	chrome_options = Options()
-	chrome_options.add_argument("--headless")
+	#chrome_options.add_argument("--headless")
 	chrome_options.binary_location = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
 	driver = webdriver.Chrome(executable_path=os.path.abspath("chromedriver"), chrome_options=chrome_options)
 	bigDict = {}
@@ -132,8 +136,8 @@ if __name__ == "__main__":
 	
 	print(bigDict)
 
-	write_file(bigDict, "initial_data.csv")
-	write_fails(fails, "fail_data.csv")
+	#write_file(bigDict, "initial_data.csv")
+	#write_fails(fails, "fail_data.csv")
 
 
 
