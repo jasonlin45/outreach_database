@@ -1,0 +1,81 @@
+﻿BGU Israel,Integrated Human Practices,The journey begins,"
+One of our first steps when delving into this area of research was meeting with Efrat Carmi, CEO of IsrALS, who had inherited the position from Liat’s father. From this discussion we understood the gravity of this disease, how it decimates a person’s life in a rapid and irreversible way. How ALS research and awareness was, until recently, marginalized due to the rarity of the disease and the small size of the patients population. We heard about the challenges of finding a cure for a disease which is only 10% familial, leaving the other 90% of patients even further from a cure. From this  important meeting we drew a few conclusions crucial to the development of our project: that there is a need for a general approach which will cover the whole patients population and the significance of a therapy which would lengthen patient survival and quality of life, regardless of the origin of the disease. Throughout this conversation we also understood the sensitivity of the matter to the patients and their loved ones. The necessity in exploring and presenting our ideas in a way that does not give false hope. These core principles guided us throughout our research and when delivering our message to ALS patients and the general public.
+"
+BGU Israel,Integrated Human Practices,A therapy to all ALS cases,"
+Next step was to thoroughly review available scientific information. Along with an in-depth review of the of the scientific literature we met with Dr. Adrian Israelson, PI of an ALS lab at Ben-Gurion university. Adrian described the budding interest in focusing on glial cells in ALS research. He has also described the unsuccessful attempts made to return the reactive Astrocytes to their healthy form. We identified that a focus on the microglia cells as relevant to our desire to develop a therapy applicable to all ALS cases, familial and sporadic alike! "
+BGU Israel,Integrated Human Practices,"if it ain’t broke, improve it!
+","
+At this point we focused our interest on the Microglia and Astrocyte cells. Through our reading we identified the NFkB pathway as a target for cytokine knockdown in Microglia. However, we still needed to figure out how to tackle the reactive Astrocytes. As currently there is no way to reverse reactive astrocytes state to their resting state. The only viable option seemed to be to kill the  reactive astrocyte cells. With this idea in mind, we were reminded of the 2015 BGU-iGEM project, Boomerang.
+
+This team used a double-plasmid system delivered by viruses in order to specifically target and kill cancer cells. The system answered many of our needs. It provided specificity by splitting the CasperCas9 enzyme and the gRNA components onto two different plasmids. We gave this plan an extra boost by choosing viruses which specifically infect only our target cells. At this point we had a concrete work plan! However, we still had reservations about approaching brain cells like cancer cells, unwanted cells we wish to kill. On top of this, we were concerned about suggesting the use of viruses in a therapy for humans.
+"
+BGU Israel,Integrated Human Practices,"justifying the risk
+","
+Luckily, we met with Dr. Perry Nisen, a member of the Board of Directors of Teva Pharmaceuticals. Dr. Nisen is an expert in neurodegenerative disease and a leader in the pharmaceutical industry. We presented our hypothesis and research plan to Dr. Nisen and then discussed our misgivings. An in-depth discussion regarding ethical dilemmas concerning genetic engineering, virus delivery, and the risk in killing central nervous system (CNS) cells led us to the following conclusions: Although genetic engineering is currently controversial, iGEM and Synthetic Biology aim to harness this technology for human advancements. Exploring these methods is the only way to make them safe and viable. We concluded that currently virus delivery is not ideal or accepted for drug delivery, however in the research phase it will give us a better chance of reaching proof of concept. Finally, although killing CNS cells may sound drastic, ALS is a fatal, aggressive disease. The benefits must be weighed against the risks. We believe that prolonging ALS patients’ survival indeed justifies this risk."
+BGU Israel,Integrated Human Practices,For and with the ALS community,"
+From this point we were ready to enter the lab phase of our project. In addition, we began planning our human practice activities. As we were aware of how sensitive it may be to present preliminary research to ALS patients and their families, we decided against presenting our project to this community. Rather, we would show our support through volunteering and participating in the annual isrALS fundraising race. Still we felt strongly about promoting awareness about ALS and Synthetic Biology. We realized that science, specifically synthetic biology projects, can only be implemented efficiently if there is a public support. Therefore, the first step is to promote awareness and understanding of such a project. This is why we hosted “iGEM on the Bar”. We invited our peers, colleagues, and the public to an evening at a local pub, with a small entrance fee, where we presented our project and invited our guests to donate or join the annual ALS race. All proceeds from this event were donated to the ALS community. 
+"
+BGU Israel,Integrated Human Practices,embraced by the scientific community,"
+As we mentioned previously, the community of ALS research labs in Israel was very limited until recently. Still, as this is a small country, the budding community is still rather small, yet impressive. We were touched by how this community embraced us when we began our project. Any lab we talked to was more than happy to help point us in the right direction, teach us new tools, or provide access to equipment. We were compelled to do something in return, so we organized the annual ALS Research Conference at the Ben-Gurion University of the Negev (our University). The conference was a great success! Not only did we hear from the leading experts in ALS research, we were able to present our project for the first time in a scientific setting. Our presentation received encouraging responses. The community seemed truly excited by our idea and the questions we received were not about the viability of the idea, rather they were insightful thoughts regarding research methods. Many researchers offered their inputs and assistance to aid us in proceeding with our project. One of these researchers, was Dr. Dinorah Friedmann-Morvinski‏ from Tel-Aviv University. 
+"
+BGU Israel,Integrated Human Practices,achieving a proof of concept,"
+Around the time of convention, we faced a major lab roadblock. We were having trouble infecting our cells with the plasmids we had designed, due to their size and the sensitivity of the CNS cell lines. Without the ability to insert our plasmids, we had no way of implementing our system. This is when Dr. Friedmann stepped in. Dr. Friedmann heard about our struggles and offered a project-saving solution. Her research group works with plasmids which implement knockdown of genes in the NFkB pathway and delivers these plasmids with viruses. Dr. Friedman was instrumental in teaching us infection techniques and providing us with plasmids from her lab. This collaboration meant, that even if we did not succeed in implementing our designed plasmids before the competition, we would still be able to achieve a proof of concept."
+BGU Israel,Integrated Human Practices,Meeting the next generation of scientists,"
+Our project would not have succeeded without our Human Practices. Our goals and implementation were all a result of involvement in the communities around us and sharing our ideas through discussions with experts. Science cannot proceed unaided and cannot succeed without public support. As a final gesture, we were delighted to host a group of high-school students in our lab. We had a great time explaining to them about iGEM, our project, and our lab. Although we ourselves as undergraduate students are only at the beginning of our scientific careers, it was wonderful to transfer the knowledge we have gathered to a new generation."
+BGU Israel,Integrated Human Practices,About Us,"The BGU-iGEM team “OriginALS” hopes to develop an innovative therapeutic approach to prolong the life expectancy of ALS patients, using Synthetic Biology. We are dedicated to promoting ALS awareness and research in Israel through public engagement and educational activities."
+BGU Israel,Public Engagement,Friends4ALS 7th Annual Fundraising Race,"
+On Thursday July 6, 2018 the OriginALS team participated in the “Annual Race for ALS
+Patients”. All donations collected went directly towards promoting ALS research and supporting
+ALS patients and their families.
+
+Leading up to the race, the OriginALS team dedicated itself to fundraising for this great
+cause. Each team member asked family and friends to sponsor them in the race. Additionally,
+we embarked on a social media and a poster campaign around the university to recruit both
+donations and additional race participants. We followed this up with a sign-up booth located in
+the student union building, in which we took shifts for several days personally approaching
+students and encouraging them to donate and join the race.
+
+During this event we had the opportunity to meet ALS patients and talk with their
+families, hearing how they confront the disease on a day to day basis. The event was very
+meaningful for our team, as we met the people who we would potentially be helping, giving us
+motivation to move forward with our project."
+BGU Israel,Public Engagement,AddGene Podcast,"
+Avital Bailen, an OriginALS team member, visited the Addgene headquarters in Boston
+on April 2, 2018. Addgene, a leading non-profit biological resource center, provides key
+materials used in laboratory research. During this visit, Avital recorded a podcast where Dr. Kim
+De Mora, Addgene Business Development Analyst and a former iGEM judge, interviewed Avital
+about iGEM, the OriginALS project, and the challenges the team could face during the coming
+year.
+We would like to thank Addgene’s CEO, Dr. Joanne Kamens, Dr. Kim De Mora, and all of
+the Addgene staff for this great opportunity and wonderful podcast! Listen to the podcast
+featured on Addgene’s blog!
+
+Listen to Avital at AddGene:"
+BGU Israel,Public Engagement,Lecture at the Manga Pub,"On Monday, May 21, 2018 the OriginALS team hosted the ""iGEM on the Bar"" event. We
+invited friends, colleagues and the public to an evening lecture at a local pub in Beer Sheva. At
+this event, our team gave a presentation about iGEM, the OriginALS project, and the upcoming
+annual ALS fundraising race."
+BGU Israel,Public Engagement,A Meeting with Tzvika Levi,"
+At the ALS race closing ceremony, several patients shared their experiences with the disease. One of the patients who spoke was Tzvika Levi. Tzvika is known in Israel as the “father of the lone soldiers” due to his tireless support of and advocation for lone soldiers. Lone soldiers are soldiers whose families are not in the country or are not able to care for them during the child’s mandatory army service in the Israel Defense Forces. Tzvika recently won the president’s award for outstanding Israeli citizens due to this work.
+
+Avital Bailen, an iGEM team member, has known Tvika since she was a lone soldier herself. At the onset of the OriginALS project, Avital visited Tzvika and his corageuous wife Naomi, and wrote the following about that experience:
+I first met Tzvika when I was eighteen years old, freshly out of high-school and a few months after making Aliya to Israel. By that time, Tzvika was already a legend to lone soldiers. We had heard countless stories about Tzvika “saving the day” when there was nobody else to turn to; helping people get into the army units they were interested in, connecting them to adopted families, or just checking up on them to say hi. I didn’t know it at the time, but I too would make a phone call one day to Tzvika when I was in need. 
+
+I had served in a co-ed infantry combat unit for almost 3 years and was looking forward to my discharge vacation, a few weeks of paid vacation given to combat soldiers as a token of appreciation for their service. I was having some difficulty with my Brigade Commander, a very high-ranking officer, who insisted on revoking my discharge vacation. Frustrated by the situation, I decided to try and contact Tzvika to see if he could help. 
+"
+BGU Israel,Public Engagement,Youth Science-Workshop Visit,"On Thursday, August 2, 2018 a group of twenty students from the Choosidman Youth
+Science Center visited our lab. This high-achieving group of high-school students participated in
+a two-week Science workshop during their summer vacation.
+As part of this workshop, they visited our lab and were taught about iGEM and the OriginALS project. After the introduction, we gave the students a tour of the lab and explained some of the processes we use in order to implement our ideas, such as plasmid cloning methods and how cell-lines are maintained. The students were especially excited to learn about the high-school iGEM track.
+We encouraged them to investigate the option of putting together an iGEM team at their local schools. It was a
+pleasure to host these talented students who had excellent and insightful questions!"
+BGU Israel,Public Engagement,Local News,"OriginALS team member, Nitzan Keidar, submitted a post to iBGU: Innovation, Science, and Technology Blog, where she discusses how the 2018 iGEM-BGU team began its journey.OriginALS team member, Liat Tsoran, was invited to a local morning show “Morning Health,” where she discussed her father’s battle with ALS and the OriginALS project.OriginALS team member, Liat Tsoran, was interviewed for the national newspaper Ynet, where she discussed the inspiration for the OriginALS project."
+BGU Israel,Public Engagement,OriginALS Animation,"As part of our goal to make the OriginALS idea accessible to the public, we created a
+short animation video which provides a visual aid to understanding the scientific aspects of the
+project.
+We tried to be very precise with our video message and invested a great deal of effort in
+order to get people excited about this idea, yet avoid spreading false hopes to ALS patients and
+their families.
+We hope you enjoy and learn something new!
+"
+BGU Israel,Public Engagement,About Us,"The BGU-iGEM team “OriginALS” hopes to develop an innovative therapeutic approach to prolong the life expectancy of ALS patients, using Synthetic Biology. We are dedicated to promoting ALS awareness and research in Israel through public engagement and educational activities."
