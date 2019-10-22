@@ -2,10 +2,12 @@
 
 ## How to Use
 
-### 1. Run Web Scraper
+### 1. Install Dependencies
+
+### 2. Run Web Scraper
 The scraper (dataScraperHeadToP.py) takes in a list of urls in the format of (toScrape.csv) and then outputs data (check initial_data.csv) in the data folder.  Summarization can be done using the summarize_bert.py script.  
 
-### 2. Use Machine Learning Model
+### 3. Use Machine Learning Model
 
 
 ## 1. Motivation
