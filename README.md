@@ -1,4 +1,13 @@
 # 2019 iGem Outreach Database
+
+## How to Use
+
+### 1. Run Web Scraper
+The scraper (dataScraperHeadToP.py) takes in a list of urls in the format of (toScrape.csv) and then outputs data (check initial_data.csv) in the data folder.  Summarization can be done using the summarize_bert.py script.  
+
+### 2. Use Machine Learning Model
+
+
 ## 1. Motivation
 
 With hundreds of iGEM teams developing innovative pedagogical tools and outreach practices for synthetic biology, there is an obvious need for a database similar to the iGEM Parts Registry that promotes dissemination of teams' outreach projects. This database should document these achievements and be easily searchable to promote widespread accessibility so future teams could draw inspiration from past projects to better serve their communities. To facilitate this process, the W&M iGEM team created an outreach database in 2017 and manually updated it in 2018. However, updating via manual curation was a major challenge, which requires over 600 man-hours each year. It is inefficient and not in line with available technology. The question of how to keep databases updated and current actually dissuades iGEM teams from constructing databases for other iGEM activities (e.g. modeling), despite the usefulness of these databases for the community.
@@ -16,8 +25,6 @@ We tested various data extraction formats on several pages. Ultimately, we decid
 The next step was then to have the scraper be able to reach the outreach pages of interest. To facilitate this, our script would interact with the navigation bar on websites and identify the integrated human practices page, and the education and public engagement page. It would then visit and scrape these two pages. Once our scraper had all the capabilities we wanted, we still needed the awards data on each team, as well as the wiki links. Fortunately, we located the JSON source of the iGEM awards page, and we could then use pandas to merge this data with the downloadable team info data, and acquire the team URLs. With a list of URLs, we had our web scraper read our link data and visit each site. Then, it outputs a .csv file containing data matched from header to content.
 
 Although this scraping model failed on some sites where data was encoded into images, rather than text, we can read the images manually because these sites were few. But if there were many sites with this issue, a solution would be to train and deploy an optical character recognition algorithm in order to extract meaning from the images. Furthermore, there were also a few pages where the data was not separated very well, due to these pages being contiguous blocks of text, rather than being organized by sections. These sites are not huge issues, as the text is still extracted, and they only suffer from slightly lower accuracy when sent to the text analysis neural network.
-
-The scraper (dataScraperHeadToP.py) takes in a list of urls in the format of (toScrape.csv) and then outputs data (check initial_data.csv) in the data folder.  Summarization can be done using the bert summary python script.
 
 ## 3. Machine Learning 
 
