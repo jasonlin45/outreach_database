@@ -8,7 +8,7 @@
 The scraper (dataScraperHeadToP.py) takes in a list of urls in the format of (toScrape.csv) and then outputs data (check initial_data.csv) in the data folder.  Summarization can be done using the summarize_bert.py script.  
 
 ### 3. Use Machine Learning Model
-Run the code in database_machine_learning.ipynb. It trains machine learning model using data from 2015 to 2017 (edited_data.csv), and label events in 2018 based on their descriptions. The output data are store in 2015-2018 data final.csv
+Run the code in database_machine_learning.ipynb. It trains machine learning model using data from 2015 to 2017 (edited_data.csv), and labels events in 2018 based on their descriptions. The output data are store in 2015-2018 data final.csv
 
 ## 1. Motivation
 
